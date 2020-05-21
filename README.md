@@ -1,2 +1,2 @@
-# research_notes
-Repository for research on particular infosec topics
+# Information Security Research Notes
+Hub for any research I wanted to make available in my infosec journey.
