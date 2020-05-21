@@ -11,6 +11,9 @@
   - [T1177: LSASS Driver](https://attack.mitre.org/techniques/T1177/)
   - [CrowdStrike Blog: Evolution of Protected Processes](https://www.crowdstrike.com/blog/evolution-protected-processes-part-1-pass-hash-mitigations-windows-81/)
 
+## Check for PPL
+- Simple registry check shows if it's configured: `reg query HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa /v RunAsPPL`
+
 ## Bypasses
 - Mimikatz has a bypass to load an MS-signed Windows kernel driver `Mimidrv`. See [this SpecterOps post](https://posts.specterops.io/mimidrv-in-depth-4d273d19e148) for more info.
 - The `!processprotect` function is probably the most used functionalities of `mimidrv`.
